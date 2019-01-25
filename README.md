@@ -30,13 +30,27 @@ Edit this document to include your answers after each question. Make sure to lea
 
 1. Describe the biggest difference between `.forEach` & `.map`.
 
+.forEach will run a loop for each element of given data. It will not change the array, but instead just run loop.
+.map will also run a loop but each element will be mapped or rather create a new array.
+
 2. What is the difference between a function and a method?
+
+They are very similar. They both take input and create output using function syntax. Methods are built in functions. When a function is defined and built into a prototype then it is a method.
 
 3. What is closure?
 
+Unlike programming that is just functional, Javascript allows for closures. This allows for functions that are defined between (or enclosed in) other functions can go up to other functions to access variables. While this closure can access its own scope, it can also access data outside of its own scope, but data outside of its scope can not receive data that is in the closure. It's like being in a room and being able to reach through a window, but not allowing things outside the window to reach inside your room.
+
 4. Describe the four rules of the 'this' keyword.
 
+Implicit binding: most common. When "this" is invoked in a function, whatever is to the left of the dot in invocation is what "this" is.
+Explicit binding: this refers to .call, .apply, and .bind. You are explicitly telling the computer what you want "this" to be bound to by calling or applying it.
+New binding: requires the use of "new". This is used when a constructor creates a new object. The new binding will bind "this" to the new object.
+Window binding: if none of these other rules are applied, then "this" is bound to the window. That means "this" would be run on every basically everything that has output. This is not good practice and should be avoided (and can be avoided by "use strict").
+
+
 5. Why do we need super() in an extended class?
+This replaces explicitly calling the parent function. When we use super() and extends we are replacing the call syntax.
 
 ## Project Set up
 
